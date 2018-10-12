@@ -1,0 +1,5 @@
+Version		Date		Instrument(s) supported			Description
+
+0.1		2018.03.10	-					First version, event/distributor+worker scheme implemented
+
+0.2		2018.03.11	-					Changed to one worker per instrument setup; 8 workers prepared, 1-5 used	

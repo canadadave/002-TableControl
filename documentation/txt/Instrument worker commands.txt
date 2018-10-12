@@ -1,0 +1,7 @@
+Worker IV [LIA] \\ Lock-in Amplifier
+
+init \ Done
+ - Initialize the visa connection and do basic self-checks
+
+shutdown \ Done
+ - Shutdown VISA connection

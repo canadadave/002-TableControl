@@ -1,0 +1,32 @@
+GENERAL INTERFACE
+
+Init [gen]  \ Done
+ - Initialize the interface
+
+Exit [gen] \ Not Done
+ - closes the interface
+
+BeginStop [gen] \ Not Done
+ - stops execution of current process (probably measurement)
+
+-----------------------------------------------------------------------------------------------
+
+setPowerLim [updui] \ Done
+ - set limits and scale of Millennia power control
+ - DATA: {cluster} with [str] abbr of power knob (MAT, MIL, etc.) and [num] min and [num] max
+
+InitFin [updui] \ Done
+ - Enable interface after initialization
+
+clearNotifications [updui] \ Done
+ - clear all notifications from the 'Notifications' panel 
+
+------------------------------------------------------------------------------------------------
+
+toggleInstrSett [disb] \ Done 
+ - enable/disable all controls on the instr settings tab selected by data
+ - DATA: {cluster} with [str] abbr of tab or 'all',  [bool] with new state
+
+toggleVISAfields [disb] \ Done
+ - enable/disable VISA str control for all 'Settings' tabs
+ - DATA: {cluster} with [str] abbr of tab or 'all',  [bool] with new state

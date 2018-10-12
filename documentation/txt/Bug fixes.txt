@@ -1,0 +1,7 @@
+Date		Version		Affected VI(s)		Bug						Reason										
+
+2018.03.10	0.1		setPowerLim		MAT-knob would not change			Miswired terminal in RefArray-assembly, MAT1 was discarded
+	FIX: 	Rewired terminal correctly
+			
+2018.03.10	0.1		getInstrAbbr		Error when typecasting control			TC_GetRefArray was incorrect, outputting incorrect RefArrays under special circumstances
+	FIX: 	Cleaned up TC_GetRefArray, so that the for-loop stops iterating when hitting the first appropiate RefArray		
